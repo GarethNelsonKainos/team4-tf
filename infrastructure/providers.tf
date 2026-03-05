@@ -5,7 +5,7 @@ terraform {
     resource_group_name  = "team4-new-rg-kainos"
     storage_account_name = "team4tfstateo5edvn"
     container_name       = "tfstate"
-    key                  = "key-vault/terraform.tfstate"
+    key                  = "terraform.tfstate"
   }
 
   required_providers {
