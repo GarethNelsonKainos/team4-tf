@@ -16,6 +16,8 @@ env:
   ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID_BLAKE }}
   # Terraform variables — TF_VAR_ prefix is picked up automatically
   TF_VAR_environment: dev
+  TF_VAR_resource_group_name: team4-new-rg-kainos
+  TF_VAR_aad_group_name: 2026-Tech-Academy
 
 jobs:
   terraform-plan:
