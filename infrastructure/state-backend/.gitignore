@@ -1,0 +1,9 @@
+.terraform/
+*.tfplan
+crash.log
+crash.*.log
+
+# State is intentionally NOT gitignored here — the state-backend's own
+# state file is small, contains no secrets, and should be committed so the
+# team can see what storage account was created.
+terraform.tfstate
