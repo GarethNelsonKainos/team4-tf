@@ -1,3 +1,9 @@
+variable "kv_suffix" {
+  description = "Suffix for the Key Vault name — set to the existing value to prevent recreation"
+  type        = string
+  default     = "la0hde"
+}
+
 variable "resource_group_name" {
   description = "Name of the existing Azure resource group"
   type        = string

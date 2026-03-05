@@ -1,12 +1,5 @@
-# Random suffix ensures the Key Vault name is globally unique
-resource "random_string" "kv_suffix" {
-  length  = 6
-  upper   = false
-  special = false
-}
-
 resource "azurerm_key_vault" "kv" {
-  name                       = "kv-${var.environment}-${random_string.kv_suffix.result}"
+  name                       = "kv-${var.environment}-${var.kv_suffix}"
   location                   = data.azurerm_resource_group.rg.location
   resource_group_name        = data.azurerm_resource_group.rg.name
   tenant_id                  = data.azurerm_client_config.current.tenant_id
