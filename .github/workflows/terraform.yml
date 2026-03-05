@@ -17,7 +17,7 @@ env:
   # Terraform variables — TF_VAR_ prefix is picked up automatically
   TF_VAR_environment: dev
   TF_VAR_resource_group_name: team4-new-rg-kainos
-  TF_VAR_aad_group_name: 2026-Tech-Academy
+  TF_VAR_aad_group_object_id: f2ae751a-9536-4c46-9209-46720122ed4a
 
 jobs:
   terraform-plan:

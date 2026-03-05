@@ -9,8 +9,8 @@ variable "environment" {
   default     = "dev"
 }
 
-variable "aad_group_name" {
-  description = "Display name of the Azure AD group whose members get Key Vault Secrets Officer access"
+variable "aad_group_object_id" {
+  description = "Object ID of the Azure AD group whose members get Key Vault Secrets Officer access"
   type        = string
 }
 

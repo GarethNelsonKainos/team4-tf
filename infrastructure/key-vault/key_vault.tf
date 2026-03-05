@@ -26,7 +26,7 @@ resource "azurerm_key_vault" "kv" {
 resource "azurerm_role_assignment" "kv_secrets_officer" {
   scope                = azurerm_key_vault.kv.id
   role_definition_name = "Key Vault Secrets Officer"
-  principal_id         = data.azuread_group.kv_users.object_id
+  principal_id         = var.aad_group_object_id
 }
 
 # IMPORTANT: The pipeline service principal must have "Key Vault Secrets User"
